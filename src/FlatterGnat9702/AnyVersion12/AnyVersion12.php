@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace FlatterGnat9702\Support12;
+namespace FlatterGnat9702\AnyVersion12;
 
 use pocketmine\event\Listener;
 use pocketmine\event\server\DataPacketReceiveEvent;
@@ -11,16 +11,13 @@ use pocketmine\network\mcpe\protocol\ProtocolInfo;
 use pocketmine\plugin\PluginBase;
 use pocketmine\utils\TextFormat;
 
-class Support12 extends PluginBase implements Listener{
+class AnyVersion12 extends PluginBase implements Listener{
 
-    /** @var bool */
-    private $showMessage;
     /** @var int[] */
-    private $clientFilter;
+    private $protocols;
 
     public function onEnable() : void{
-        $this->showMessage = true;
-        $this->clientFilter = [120, 134, 135, 136, 137, 140, 141, 150];
+        $this->protocols = [120, 134, 135, 136, 137, 140, 141, 150];
         $this->getLogger()->notice(TextFormat::YELLOW . "Server protocol version: " . ProtocolInfo::CURRENT_PROTOCOL);
         $this->getServer()->getPluginManager()->registerEvents($this, $this);
     }
@@ -33,7 +30,7 @@ class Support12 extends PluginBase implements Listener{
                 $this->getLogger()->notice(TextFormat::GREEN . $username . " uses a server-compatible version of the protocol.");
                 return;
             }
-            if(!in_array($packet->protocol, $this->clientFilter)){
+            if(!in_array($packet->protocol, $this->protocols)){
                 $this->getLogger()->notice(TextFormat::RED . $username . " use a protocol-incompatible version of the server (" . $packet->protocol . ")");
                 return;
             }

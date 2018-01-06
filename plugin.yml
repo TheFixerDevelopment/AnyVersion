@@ -1,6 +1,6 @@
-name: Support12
-main: FlatterGnat9702\Support12\Support12
+name: AnyVersion12
+main: FlatterGnat9702\AnyVersion12\AnyVersion12
 version: "1.0"
-api: 3.0.0-ALPHA10
+api: [3.0.0-ALPHA7, 3.0.0-ALPHA8, 3.0.0-ALPHA9, 3.0.0-ALPHA10]
 author: FlatterGnat9702
 website: https://github.com/FlatterGnat9702/Support12
