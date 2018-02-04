@@ -1,6 +1,6 @@
 name: AnyVersion
 main: zyware\AnyVersion\AnyVersion
-version: "Build #1"
+version: 1.0.0
 api: 3.0.0-ALPHA10
 author: zyware
 website: https://github.com/zyware/AnyVersion
