@@ -195,7 +195,7 @@ class AnyVersion extends PluginBase implements Listener{
 	 * @return bool
 	 */
 	public function PacketChanger12(string &$n, DataPacket &$pk) : bool{
-		$n = "Packets\\12\\" . self::PACKET_12[$n];
+		$n = "Packets\\v12\\" . self::PACKET_12[$n];
 		$np = new $n;
 		if(!$np instanceof DataPacket) return false;
 		$np->setBuffer($pk->buffer, $pk->offset);
