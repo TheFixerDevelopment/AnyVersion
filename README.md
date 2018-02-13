@@ -5,4 +5,4 @@ AnyVersion is a PocketMine-MP plugin for support all versions 1.2.x!
 You can get the compiled .phar file on poggit by clicking [here](https://poggit.pmmp.io/ci/zyware/AnyVersion/AnyVersion).
 
 ## Supported API Versions
-AnyVersion can ONLY be used on PocketMine servers with API 3.0.0-ALPHA11 onward.
+AnyVersion can ONLY be used on PocketMine servers with API 3.0.0-ALPHA11.
