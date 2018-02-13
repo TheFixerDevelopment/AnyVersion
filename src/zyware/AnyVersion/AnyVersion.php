@@ -14,7 +14,7 @@ use pocketmine\plugin\PluginBase;
 
 class AnyVersion extends PluginBase implements Listener{
 
-	public const PROTOCOL_12 = [134, 135, 136, 137, 140, 141, 150, 160, 200, 201];
+	public const PROTOCOL_12 = [101, 102, 105, 106, 107, 110, 111, 112, 113, 134, 135, 136, 137, 140, 141, 150, 160, 200, 201];
 
 	public const PACKET_12 = [
 		"LoginPacket" => 0x01,
