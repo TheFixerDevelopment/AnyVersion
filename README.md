@@ -1,4 +1,4 @@
-# AnyVersion
+# AnyVersion [![Build Status](https://travis-ci.org/zyware/AnyVersion.svg?branch=master)](https://travis-ci.org/zyware/AnyVersion)
 Support all versions 1.2 on the server only PocketMine-MP
 
 ## Installation
