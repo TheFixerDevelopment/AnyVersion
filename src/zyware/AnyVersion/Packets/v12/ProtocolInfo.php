@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace BeforePacketHandler\Packets\v12;
+namespace zyware\AnyVersion\Packets\v12;
 
 interface ProtocolInfo{
 
