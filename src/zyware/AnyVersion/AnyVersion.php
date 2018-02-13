@@ -162,7 +162,7 @@ class AnyVersion extends PluginBase implements Listener{
 			}// 1.2.0 Done
 
 		}else{
-			unset($this->packeter[$pl->getName()]);
+			unset($this->packeters[$pl->getName()]);
 		}
 	}
 
@@ -183,7 +183,7 @@ class AnyVersion extends PluginBase implements Listener{
 				$this->getLogger()->info("Unfound Packet Id : 0x" . $pk::NETWORK_ID - 0x00 . ", Buffer : " . $pk->buffer . ", Offset : " . $pk->offset);
 			} // 1.2.0 Done
 		}else{
-			unset($this->packeter[$pl->getName()] [$id]);
+			unset($this->packeters[$pl->getName()] [$id]);
 		}
 	}
 
